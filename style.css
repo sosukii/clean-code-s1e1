@@ -22,7 +22,8 @@
 
 @media (max-width: 768px) {
 
-  .header { text-align: center;
+  .header { 
+    text-align: center;
   }
 
 }
@@ -33,7 +34,8 @@
   margin: 0 auto 0;
 }
 
-.task-input, .task-label {
+.task-input, 
+.task-label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -48,11 +50,13 @@
   padding: 0px;
 }
 
-.list-item, .subtitle {
+.list-item, 
+.subtitle {
   list-style: none;
 }
 
-.input, .btn {
+.input, 
+.btn {
   outline: none;
 }
 
