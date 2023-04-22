@@ -36,7 +36,7 @@
 .task-input, .task-label {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-wrapper {
@@ -139,7 +139,7 @@
 }
 
 .list-item > .list-input {
-  width: 226px
+  width: 226px;
 }
 
 .remove-img {
@@ -155,18 +155,18 @@
 /* Completed */
 
 .label-completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .list-input {
-  display: none
+  display: none;
 }
 
 .list .edit-mode .list-input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .list .edit-mode .task-label {
