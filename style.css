@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.img-matrix {
+.header__matrix {
   width: 100%;
 }
 
-.header .more-info {
+.header {
   font-family: fantasy, cursive;
 }
 
@@ -34,33 +34,33 @@
   margin: 0 auto 0;
 }
 
-.task-input, 
-.task-label {
+.section__input, 
+.section__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-wrapper {
+.section__wrapper {
   display: flex;
 }
 
-.list {
+.section__list {
   margin: 0;
   padding: 0px;
 }
 
-.list-item, 
-.subtitle {
+.section__item, 
+.section__subtitle {
   list-style: none;
 }
 
-.input, 
-.btn {
+.section__input, 
+.section__btn {
   outline: none;
 }
 
-.btn {
+.section__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -70,14 +70,13 @@
   cursor: pointer;
 }
 
-.btn:hover {
+.section__btn:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
 
-.subtitle,
-.task-label-new {
+.section__subtitle {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +86,7 @@
   text-transform: uppercase;
 }
 
-.task-input {
+.section__input{
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -100,24 +99,20 @@
   color: #888;
 }
 
-.task-input:focus {
+.section__input:focus {
   color: #333;
 }
 
 /* New Task */
 
-.task-label-new {
+.section__subtitle_new {  
   display: block;
   margin: 0 0 20px;
 }
 
-.task-input-new {
-  width: 318px;
-}
-
 /* Task list */
 
-.list-item {
+.section__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -127,32 +122,33 @@
   align-items: center;
 }
 
-.list-item > * {
+.section__item {
   vertical-align: middle;
 }
 
-.list-item > .input-checkbox {
+.section__item > .section__checkbox {
   margin: 0 10px;
 }
 
-.list-item > .task-label {
+.section__item > .section__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item > .list-input {
+.section__item > .section__input {
   width: 226px;
+  display: none;
 }
 
-.remove-img {
+.section__remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.remove-img:hover {
+.section__remove-img:hover {
   transform: rotateZ(0);
 }
 
@@ -164,15 +160,12 @@
 }
 
 /* Edit Task */
-.list-input {
-  display: none;
-}
 
-.list .edit-mode .list-input {
+.section__list .section__item_edit .section__input{
   display: inline-block;
   width: 224px;
 }
 
-.list .edit-mode .task-label {
+.section__list .section__item_edit .section__label {
   display: none;
 }
